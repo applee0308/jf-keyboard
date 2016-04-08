@@ -22,14 +22,13 @@ $(function() {
 	$(".is-jfkeyboard").on('click', function() {
 
 		var _isReadonly = $(this).hasClass('is-readonly');
-		var _itSuperValue = $(this).val();
+		var _itSuperValueArray = $(this).val().split('');
 		$(".is-jfkeyboard").removeClass("is-focus");
 		$(this).addClass("is-focus");
 
 		if (_isReadonly) {
-			var _valueArray = new Array();
+			var _valueArray = _itSuperValueArray;
 			$("#ui-keyboard").slideDown();
-			_valueArray.push(_itSuperValue);
 			// 键入功能
 			$(".btn-sm").on('click', function() {
 					var _dataValue = $(this).attr('data-value');
