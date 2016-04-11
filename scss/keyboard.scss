@@ -1,82 +1,100 @@
 @import './base/reset';
+@import './base/font';
 @import './base/vars';
 .ui-keyboard {
-	position: fixed;
-	bottom: 0;
-	z-index: 19920308;
-	display: block;
-	width: 100%;
-	padding: 15px 0 7px 0;
-	text-align: center;
-	background: $bggray;
-	.keyboard-btn {
-		margin-bottom: 8px;
-		margin-left: 2px;
-		border: 1px solid $bordergray;
-		border-radius: 4px;
-		padding: 0;
-		width: 1.6em;
-		height: 2.2em;
-		font-size: 1.1em;
-		background: #fff;
-		outline: none;
-	}
-	.keyboard-btn.btn-md {
-		background: $bgdarkgray;
-		width: 3em;
-		height: 2.3em;
-		font-size: 1em;
-	}
+    position: fixed;
+    bottom: 0;
+    z-index: 19920308;
+    display: block;
+    width: 100%;
+    padding: 15px 0 7px 0;
+    text-align: center;
+    background: $bggray;
+    .keyboard-btn {
+        width: 1.6em;
+        height: 2.2em;
+        padding: 0;
+        margin-bottom: 8px;
+        margin-left: 2px;
+        background: #fff;
+        font-size: 1.1em;
+        border: 1px solid $bordergray;
+        border-radius: 4px;
+        outline: none;
+    }
+    .keyboard-btn.btn-md {
+        width: 3em;
+        height: 2.3em;
+        font-size: 1em;
+        background: $bgdarkgray;
+    }
 }
-.switch-board {
-	position: fixed;
-	z-index: 19920307;
-	display: inline-block;
-	outline: none;
-	right: 30px;
-	bottom: 30px;
-	img {
-		width:26px;
-		padding: 6px;
-		border-radius: 50%;
-		border: 2px solid #33475f;
-		background: #f7f7f7;
-	}
+
+.is-jfkeyboard {
+    position: relative;
 }
-.switch-board.is-on img {
-		border: 2px solid #CC3399;
-}
+
 @media (min-width: 640px) {
     .ui-keyboard .keyboard-btn {
-		width: 2.5em;
-		height: 1.8em;
-		font-size: 1.3em;
-	}
-	.ui-keyboard .keyboard-btn.btn-md{
-		width: 3.5em;
-		font-size: 1.2em;
-		height: 1.8em;
-	}
+        width: 2.5em;
+        height: 1.8em;
+        font-size: 1.3em;
+    }
+    .ui-keyboard .keyboard-btn.btn-md {
+        width: 3.5em;
+        height: 1.8em;
+        font-size: 1.2em;
+    }
 }
+
+.keyboard-tag {
+    position: absolute;
+    z-index: 999;
+    width: 35px;
+    margin-left: -35px;
+    text-align: center;
+    -moz-user-select: none;
+    cursor: pointer;
+    -khtml-user-select: none;
+    user-select: none;
+    display: inline-block;
+}
+
+.keyboard-tag i {
+    font-size: 20px;
+    color: #0099FF;
+}
+
+
 /*  * iPhone4 && iPhone4S *  */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) { .inner { margin-top: 230px; }
-	.ui-keyboard .keyboard-btn {
-		width: 1.6em;
-		font-size: 1em;
-	}
-	.ui-keyboard .keyboard-btn.btn-md{
-		width: 2.5em;
-		font-size: .9em;
-	}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+    .inner {
+        margin-top: 230px;
+    }
+    .ui-keyboard .keyboard-btn {
+        width: 1.6em;
+        font-size: 1em;
+    }
+    .ui-keyboard .keyboard-btn.btn-md {
+        width: 2.5em;
+        font-size: .9em;
+    }
 }
+
+
 /*  * iphone5 && iPhone5S *  */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) { .inner { margin-top: 230px; }
-	.ui-keyboard .keyboard-btn {
-		width: 1.6em;
-		font-size: 1em;
-	}
-	.ui-keyboard .keyboard-btn.btn-md{
-		width: 2.5em;
-		font-size: .9em;
-	}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) {
+    .inner {
+        margin-top: 230px;
+    }
+    .ui-keyboard .keyboard-btn {
+        width: 1.6em;
+        font-size: 1em;
+    }
+    .ui-keyboard .keyboard-btn.btn-md {
+        width: 2.5em;
+        font-size: .9em;
+    }
 }
