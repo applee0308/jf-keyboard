@@ -136,14 +136,14 @@ td, th { padding: 0; }
 
 .ui-keyboard .keyboard-btn.btn-md { width: 3em; height: 2.3em; font-size: 1em; background: #dcdcdc; }
 
-.is-jfkeyboard { position: relative; }
+.has-jfkeyboard { position: relative; }
 
 @media (min-width: 640px) { .ui-keyboard .keyboard-btn { width: 2.5em; height: 1.8em; font-size: 1.3em; }
   .ui-keyboard .keyboard-btn.btn-md { width: 3.5em; height: 1.8em; font-size: 1.2em; } }
 
 .keyboard-tag { position: absolute; z-index: 999; width: 35px; margin-left: -35px; text-align: center; -moz-user-select: none; cursor: pointer; -khtml-user-select: none; user-select: none; display: inline-block; }
 
-.keyboard-tag i { font-size: 20px; color: #0099FF; }
+.keyboard-tag img { width: 24px; display: inline-block; }
 
 /*  * iPhone4 && iPhone4S *  */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2 / 3) { .inner { margin-top: 230px; }

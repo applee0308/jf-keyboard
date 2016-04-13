@@ -30,7 +30,7 @@
     }
 }
 
-.is-jfkeyboard {
+.has-jfkeyboard {
     position: relative;
 }
 
@@ -60,9 +60,9 @@
     display: inline-block;
 }
 
-.keyboard-tag i {
-    font-size: 20px;
-    color: #0099FF;
+.keyboard-tag img {
+    width: 24px;
+    display: inline-block;
 }
 
 
